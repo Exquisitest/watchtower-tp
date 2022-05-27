@@ -1,0 +1,34 @@
+mouse = game.Players.LocalPlayer:GetMouse()
+local ui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local tb = Instance.new("TextButton")
+
+-- Prop.
+
+ui.Name = "Watchtower"
+ui.Parent = game.CoreGui
+ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ui
+Frame.Position = UDim2.new(0.06, 0, 0.2, 0)
+Frame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+Frame.BackgroundTransparency = 0.25
+Frame.Draggable = false
+Frame.Active = true
+
+tb.Name = "TextButton_ui"
+tb.Parent = Frame
+tb.Position = UDim2.new(0.189999998, 0, 0.140000001, 0)
+tb.Size = UDim2.new(0, 66, 0, 67)
+tb.Text = "Watchtower"
+tb.TextSize = 12.000
+tb.BackgroundTransparency = 1
+tb.TextColor3 = Color3.fromRGB(256, 256, 256)
+tb.BorderSizePixel = 0
+
+tb.MouseButton1Click:connect(function()
+    local facilitypos = Vector3.new(-664.622,138.973,-293.104)
+facilitypos = CFrame.new(facilitypos.X,facilitypos.Y,facilitypos.Z)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = facilitypos
+end)
