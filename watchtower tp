@@ -11,9 +11,9 @@ ui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = ui
 Frame.Position = UDim2.new(0.06, 0, 0.2, 0)
-Frame.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+Frame.BackgroundColor3 = Color3.fromRGB(46, 46, 46)
 Frame.Size = UDim2.new(0, 100, 0, 100)
-Frame.BackgroundTransparency = 0.25
+Frame.BackgroundTransparency = 0
 Frame.Draggable = false
 Frame.Active = true
 
